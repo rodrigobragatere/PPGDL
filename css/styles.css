@@ -1,0 +1,573 @@
+/* PPGDL — Identidade visual UNISUAM / Desenvolvimento Local */
+:root {
+  --ppgdl-green: #8ba341;
+  --ppgdl-green-dark: #6d8233;
+  --unisuam-orange: #e37222;
+  --unisuam-navy: #003358;
+  --text-dark: #1a2b3c;
+  --text-muted: #5a6b7d;
+  --bg-light: #f4f6f1;
+  --shadow: 0 4px 24px rgba(0, 51, 88, 0.08);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--text-dark);
+  background-color: #fff;
+}
+
+/* ── Header ── */
+.site-header {
+  background: linear-gradient(135deg, var(--ppgdl-green) 0%, var(--ppgdl-green-dark) 100%);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.site-header .navbar-brand img {
+  height: 56px;
+  width: auto;
+  border-radius: 6px;
+}
+
+.site-header .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link.active {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.header-unisuam {
+  height: 40px;
+  width: auto;
+  opacity: 0.95;
+}
+
+/* ── Hero ── */
+.hero {
+  background: linear-gradient(160deg, var(--unisuam-navy) 0%, #004d7a 50%, var(--ppgdl-green-dark) 100%);
+  color: #fff;
+  padding: 5rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: var(--unisuam-orange);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.9rem;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero-lead {
+  font-size: 1.1rem;
+  opacity: 0.92;
+  max-width: 720px;
+  line-height: 1.7;
+}
+
+.hero-showcase {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.hero-logo-wrap {
+  flex-shrink: 0;
+}
+
+.hero-logo {
+  width: clamp(140px, 18vw, 220px);
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
+  border: 3px solid rgba(255, 255, 255, 0.25);
+  display: block;
+}
+
+.hero-stats {
+  display: flex;
+  flex: 1;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.hero-stat {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 1rem 0.85rem;
+  min-width: 0;
+  text-align: center;
+}
+
+.hero-stat strong {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--unisuam-orange);
+}
+
+.hero-stat span {
+  font-size: 0.78rem;
+  opacity: 0.85;
+  line-height: 1.35;
+  display: block;
+}
+
+/* ── Sections ── */
+.section {
+  padding: 4rem 0;
+}
+
+.section-alt {
+  background: var(--bg-light);
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--unisuam-navy);
+  margin-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 4px;
+  background: var(--unisuam-orange);
+  border-radius: 2px;
+  margin-top: 0.5rem;
+}
+
+.section-subtitle {
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  max-width: 680px;
+}
+
+/* ── Cards ── */
+.info-card {
+  background: #fff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  height: 100%;
+  transition: transform 0.25s, box-shadow 0.25s;
+  overflow: hidden;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 51, 88, 0.12);
+}
+
+.info-card .card-header {
+  background: var(--unisuam-navy);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 1rem 1.25rem;
+}
+
+.info-card .card-header.mestrado {
+  background: var(--ppgdl-green);
+}
+
+.info-card .card-header.doutorado {
+  background: var(--unisuam-navy);
+}
+
+.info-card .card-header.posdoc {
+  background: var(--unisuam-orange);
+}
+
+.info-card .card-body {
+  padding: 1.25rem;
+}
+
+.info-card ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.info-card li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+/* ── Research lines ── */
+.research-line {
+  border-left: 4px solid var(--ppgdl-green);
+  padding: 1.25rem 1.5rem;
+  background: #fff;
+  border-radius: 0 12px 12px 0;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.25rem;
+}
+
+.research-line h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--unisuam-navy);
+  margin-bottom: 0.5rem;
+}
+
+.research-line p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* ── Projects area ── */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  border: 2px solid var(--ppgdl-green);
+  background: transparent;
+  color: var(--ppgdl-green-dark);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--ppgdl-green);
+  color: #fff;
+  border-color: var(--ppgdl-green);
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0, 51, 88, 0.14);
+}
+
+.project-card-header {
+  padding: 1.25rem;
+  color: #fff;
+}
+
+.project-card-header.topicos {
+  background: linear-gradient(135deg, var(--unisuam-navy), #005580);
+}
+
+.project-card-header.governanca {
+  background: linear-gradient(135deg, #1a5c3a, var(--ppgdl-green));
+}
+
+.project-card-header.tecnologias {
+  background: linear-gradient(135deg, #6b3fa0, #9b59b6);
+}
+
+.project-card-header.empreendedorismo {
+  background: linear-gradient(135deg, var(--unisuam-orange), #c45a10);
+}
+
+.project-discipline {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 0.35rem;
+}
+
+.project-card-header h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.project-card-body {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-body p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 1rem;
+}
+
+.project-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: var(--bg-light);
+  color: var(--unisuam-navy);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.btn-project {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--unisuam-orange);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.55rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background 0.2s;
+  align-self: flex-start;
+}
+
+.btn-project:hover {
+  background: #c45a10;
+  color: #fff;
+}
+
+/* ── Coordination ── */
+.coord-card {
+  text-align: center;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.coord-card .coord-role {
+  font-size: 0.8rem;
+  color: var(--unisuam-orange);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.coord-card h4 {
+  font-size: 1.1rem;
+  color: var(--unisuam-navy);
+  margin: 0.25rem 0 0.5rem;
+}
+
+.coord-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ── Infrastructure pills ── */
+.lab-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  border: 2px solid var(--ppgdl-green);
+  color: var(--ppgdl-green-dark);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin: 0.25rem;
+}
+
+.lab-pill .lab-acronym {
+  background: var(--ppgdl-green);
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+/* ── CTA banner ── */
+.cta-banner {
+  background: linear-gradient(90deg, var(--unisuam-navy), var(--ppgdl-green-dark));
+  color: #fff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.cta-banner h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.cta-banner p {
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.btn-cta {
+  background: var(--unisuam-orange);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-cta:hover {
+  background: #c45a10;
+  color: #fff;
+  transform: scale(1.03);
+}
+
+/* ── Footer ── */
+.site-footer {
+  background: var(--unisuam-navy);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 2.5rem 0 1.5rem;
+}
+
+.site-footer a {
+  color: var(--unisuam-orange);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-brand {
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.15);
+  margin: 1.5rem 0;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+/* ── Animations ── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Responsive ── */
+@media (max-width: 991px) {
+  .hero-showcase {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+
+  .hero-logo-wrap {
+    text-align: center;
+  }
+
+  .hero-stats {
+    flex-wrap: wrap;
+  }
+
+  .hero-stat {
+    flex: 1 1 calc(50% - 0.375rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .section {
+    padding: 2.5rem 0;
+  }
+
+  .hero-stat {
+    padding: 0.75rem 0.6rem;
+  }
+
+  .hero-stat strong {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-stats {
+    flex-wrap: nowrap;
+  }
+}
