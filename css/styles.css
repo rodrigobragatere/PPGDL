@@ -327,6 +327,10 @@ body {
   background: linear-gradient(135deg, var(--unisuam-orange), #c45a10);
 }
 
+.project-card-header.gestao {
+  background: linear-gradient(135deg, #0d5c63, #148f9b);
+}
+
 .project-discipline {
   font-size: 0.7rem;
   font-weight: 700;
