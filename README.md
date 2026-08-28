@@ -28,7 +28,7 @@ O PPGDL forma profissionais capazes de identificar condições latentes e gerar 
 | Disciplina | Projeto | URL |
 |---|---|---|
 | Tópicos em Desenvolvimento Local | Modelo de Avaliação de Desempenho de APLs | [apl-wheat.vercel.app](https://apl-wheat.vercel.app/) |
-| Tópicos em Desenvolvimento Local | SASAT | [sasat.vercel.app](https://sasat.vercel.app/) |
+| Bioética | SASAT | [sasat.vercel.app](https://sasat.vercel.app/) |
 | Governança Corporativa Ambiental | Emissões de CO₂ no Brasil por Região | [governanca-corporativae-ambiental.vercel.app](https://governanca-corporativae-ambiental.vercel.app/) |
 | Tecnologias Sociais | Programa Futuro Cientista (PFC) | [jovem-cientista.vercel.app](https://jovem-cientista.vercel.app/) |
 | Tecnologias Sociais | Análise de Argilas para Cerâmica Artesanal | [dashboard-argila.vercel.app](https://dashboard-argila.vercel.app/) |

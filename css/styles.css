@@ -331,6 +331,10 @@ body {
   background: linear-gradient(135deg, #0d5c63, #148f9b);
 }
 
+.project-card-header.bioetica {
+  background: linear-gradient(135deg, #4a1942, #7b2d6e);
+}
+
 .project-discipline {
   font-size: 0.7rem;
   font-weight: 700;
