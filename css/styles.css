@@ -339,6 +339,10 @@ body {
   background: linear-gradient(135deg, #5c3d2e, #a0522d);
 }
 
+.project-card-header.metodologia {
+  background: linear-gradient(135deg, #1e3a5f, #3d6b9e);
+}
+
 .project-discipline {
   font-size: 0.7rem;
   font-weight: 700;
@@ -525,6 +529,27 @@ body {
 .footer-copy {
   font-size: 0.85rem;
   opacity: 0.75;
+}
+
+.footer-logo-link {
+  display: inline-block;
+  line-height: 0;
+  background: #000;
+  border-radius: 8px;
+  padding: 6px 12px;
+  transition: opacity 0.2s ease;
+}
+
+.footer-logo-link:hover {
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+.footer-logo {
+  height: 56px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
 }
 
 /* ── Animations ── */
