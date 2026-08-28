@@ -34,6 +34,7 @@ O PPGDL forma profissionais capazes de identificar condições latentes e gerar 
 | Tecnologias Sociais | Análise de Argilas para Cerâmica Artesanal | [dashboard-argila.vercel.app](https://dashboard-argila.vercel.app/) |
 | Empreendedorismo & PN | Protótipo PESTEL — Dashboard | [rodrigobragatere-pestel.vercel.app](https://rodrigobragatere-pestel.vercel.app/) |
 | Gestão da Inovação | Observatório CT&I Brasil | [ct-i.vercel.app](https://ct-i.vercel.app/) |
+| Desigualdades Socioespaciais e Desenvolvimento Sustentável | Território e Pobreza | [desigaldades-socioespaciais.vercel.app](https://desigaldades-socioespaciais.vercel.app/) |
 
 ## Tecnologias
 

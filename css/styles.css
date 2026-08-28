@@ -335,6 +335,10 @@ body {
   background: linear-gradient(135deg, #4a1942, #7b2d6e);
 }
 
+.project-card-header.desigualdades {
+  background: linear-gradient(135deg, #5c3d2e, #a0522d);
+}
+
 .project-discipline {
   font-size: 0.7rem;
   font-weight: 700;
